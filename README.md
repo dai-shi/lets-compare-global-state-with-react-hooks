@@ -16,7 +16,27 @@ so that library authors can contribute improving the comparison.
 
 ## Comparison points
 
-TODO
+1. Does it use React Context? What is context value?
+2. Does it use subscription for state propagation?
+3. Does it have render optimization? What is the technique?
+4. Does it have dependencies? What are they?
+5. Does it suffer from tearing in concurrent mode?
+6. Does it support state branching in concurrent mode?
+
+### Notes
+
+Render optimization means avoiding unnecessary re-renders.
+If a state object `{ a: 1, b: 2 }` and a component uses `a`,
+it won't re-render if only `b` is changed.
+
+For "tearing" and "state branching", refer
+<https://github.com/dai-shi/will-this-react-global-state-work-in-concurrent-mode>.
+These are not necessarily problems depending on requirements.
+
+### TODO
+
+- Bundle size
+- js-framework-benchmark
 
 ## Comparison Table
 
