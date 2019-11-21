@@ -1,4 +1,4 @@
-# lets-compare-global-state-with-react-hooks
+# Let's compare global state with React Hooks
 
 Comparing global state libraries with React Hooks
 
@@ -13,6 +13,10 @@ I started creating a comparison table in
 [the issue](https://github.com/dai-shi/react-tracked/issues/1).
 As the table becomes bigger, let's create a separate repo
 so that library authors can contribute improving the comparison.
+
+## Comparison points
+
+TODO
 
 ## Comparison Table
 
