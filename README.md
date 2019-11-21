@@ -38,343 +38,154 @@ These are not necessarily problems depending on requirements.
 - Bundle size
 - js-framework-benchmark
 
-## Libraries
-
-### React Tracked
-
-[GitHub](https://github.com/dai-shi/react-tracked)
-
-1. Does it use React Context? What is context value?
-
-Yes. State-based object.
-
-2. Does it use subscription for state propagation?
-
-Yes.
-
-3. Does it have render optimization? What is the technique?
-
-Yes. Both Proxy-based tracking and selector function.
-
-4. Does it have dependencies? What are they?
-
-No.
-
-5. Does it avoid tearing in concurrent mode?
-
-Yes.
-
-6. Does it support state branching in concurrent mode?
-
-Yes.
-
-### Constate
-
-[GitHub](https://github.com/diegohaz/constate)
-
-1. Does it use React Context? What is context value?
-
-Yes. State-based object.
-
-2. Does it use subscription for state propagation?
-
-No.
-
-3. Does it have render optimization? What is the technique?
-
-No.
-
-4. Does it have dependencies? What are they?
-
-No.
-
-5. Does it avoid tearing in concurrent mode?
-
-Yes.
-
-6. Does it support state branching in concurrent mode?
-
-Yes.
-
-### Unstated Next
-
-[GitHub](https://github.com/jamiebuilds/unstated-next)
-
-1. Does it use React Context? What is context value?
-
-Yes. State-baesd object.
-
-2. Does it use subscription for state propagation?
-
-No.
-
-3. Does it have render optimization? What is the technique?
-
-No.
-
-4. Does it have dependencies? What are they?
-
-No.
-
-5. Does it avoid tearing in concurrent mode?
-
-Unknown. Maybe yes.
-
-6. Does it support state branching in concurrent mode?
-
-Unknown. Maybe yes.
-
-### Zustand
-
-[GitHub](https://github.com/react-spring/zustand)
-
-1. Does it use React Context? What is context value?
-
-No.
-
-2. Does it use subscription for state propagation?
-
-Yes.
-
-3. Does it have render optimization? What is the technique?
-
-Yes. Selector function.
-
-4. Does it have dependencies? What are they?
-
-No.
-
-5. Does it avoid tearing in concurrent mode?
-
-No.
-
-6. Does it support state branching in concurrent mode?
-
-No.
-
-### React Sweet State
-
-[GitHub](https://github.com/atlassian/react-sweet-state)
-
-1. Does it use React Context? What is context value?
-
-Yes. State-based object.
-
-2. Does it use subscription for state propagation?
-
-Yes.
-
-3. Does it have render optimization? What is the technique?
-
-Yes. Selector function.
-
-4. Does it have dependencies? What are they?
-
-No.
-
-5. Does it avoid tearing in concurrent mode?
-
-No.
-
-6. Does it support state branching in concurrent mode?
-
-No.
-
-### Storeon
-
-[GitHub](https://github.com/storeon/storeon)
-
-1. Does it use React Context? What is context value?
-
-Yes. Store.
-
-2. Does it use subscription for state propagation?
-
-Yes.
-
-3. Does it have render optimization? What is the technique?
-
-Yes. Shallow state properties.
-
-4. Does it have dependencies? What are they?
-
-No.
-
-5. Does it avoid tearing in concurrent mode?
-
-No.
-
-6. Does it support state branching in concurrent mode?
-
-No.
-
-### React Hooks Global State
-
-[GitHub](https://github.com/dai-shi/react-hooks-global-state)
-
-1. Does it use React Context? What is context value?
-
-Yes. State object.
-
-2. Does it use subscription for state propagation?
-
-No.
-
-3. Does it have render optimization? What is the technique?
-
-Yes. Shallow state properties.
-
-4. Does it have dependencies? What are they?
-
-No.
-
-5. Does it avoid tearing in concurrent mode?
-
-Yes.
-
-6. Does it support state branching in concurrent mode?
-
-No.
-
-## React Redux (Hooks)
-
-[GitHub](https://github.com/reduxjs/react-redux)
-
-1. Does it use React Context? What is context value?
-
-Yes. Store.
-
-2. Does it use subscription for state propagation?
-
-Yes.
-
-3. Does it have render optimization? What is the technique?
-
-Yes. Selector function.
-
-4. Does it have dependencies? What are they?
-
-Yes. Redux.
-
-5. Does it avoid tearing in concurrent mode?
-
-No.
-
-6. Does it support state branching in concurrent mode?
-
-No.
-
-### Reactive React Redux
-
-[GitHub](https://github.com/dai-shi/reactive-react-redux)
-
-1. Does it use React Context? What is context value?
-
-Yes. State-based object.
-
-2. Does it use subscription for state propagation?
-
-Yes.
-
-3. Does it have render optimization? What is the technique?
-
-Yes. Both Proxy-based tracking and selector function.
-
-4. Does it have dependencies? What are they?
-
-Yes. Redux.
-
-5. Does it avoid tearing in concurrent mode?
-
-Yes.
-
-6. Does it support state branching in concurrent mode?
-
-No.
-
-## Easy Peasy
-
-[GitHub](https://github.com/ctrlplusb/easy-peasy)
-
-1. Does it use React Context? What is context value?
-
-Yes. Store.
-
-2. Does it use subscription for state propagation?
-
-Yes.
-
-3. Does it have render optimization? What is the technique?
-
-Yes. Selector function.
-
-4. Does it have dependencies? What are they?
-
-Yes. Redux, immer, and so on.
-
-5. Does it avoid tearing in concurrent mode?
-
-Unknown. Maybe no.
-
-6. Does it support state branching in concurrent mode?
-
-Unknown. Maybe no.
-
-### MobX React Lite
-
-[GitHub](https://github.com/mobxjs/mobx-react-lite)
-
-1. Does it use React Context? What is context value?
-
-Yes. Mutable state object.
-
-2. Does it use subscription for state propagation?
-
-No.
-
-3. Does it have render optimization? What is the technique?
-
-Yes. Proxy-based tracking.
-
-4. Does it have dependencies? What are they?
-
-Yes. MobX.
-
-5. Does it avoid tearing in concurrent mode?
-
-No.
-
-6. Does it support state branching in concurrent mode?
-
-No.
-
-### Hookstate
-
-[GitHub](https://github.com/avkonst/hookstate)
-
-1. Does it use React Context? What is context value?
-
-No.
-
-2. Does it use subscription for state propagation?
-
-Yes.
-
-3. Does it have render optimization? What is the technique?
-
-Yes. Proxy-based tracking.
-
-4. Does it have dependencies? What are they?
-
-No.
-
-5. Does it avoid tearing in concurrent mode?
-
-Unknown.
-
-6. Does it support state branching in concurrent mode?
-
-Unknown.
+## Comparison Table
+
+<table>
+
+<tr>
+<th></th>
+<th>Point 1</th>
+<th>Point 2</th>
+<th>Point 3</th>
+<th>Point 4</th>
+<th>Point 5</th>
+<th>Point 6</th>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/dai-shi/react-tracked">react-tracked</a></th>
+<td>State-based object</td>
+<td>Yes</td>
+<td>Proxy-based tracking and selector function</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/diegohaz/constate">constate</a></th>
+<td>State-based object</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/jamiebuilds/unstated-next">unstated-next</a></th>
+<td>State-based object</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Unknown (maybe yes)</td>
+<td>Unknown (maybe yes)</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/react-spring/zustand">zustand</a></th>
+<td>No</td>
+<td>Yes</td>
+<td>Selector function</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/atlassian/react-sweet-state">react-sweet-state</a></th>
+<td>State-based object</td>
+<td>Yes</td>
+<td>Selector function</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/storeon/storeon">storeon</a></th>
+<td>Store</td>
+<td>Yes</td>
+<td>Shallow state properties</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/dai-shi/react-hooks-global-state">react-hooks-global-state</a></th>
+<td>State object</td>
+<td>No</td>
+<td>Shallow state properties</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/reduxjs/react-redux">react-redux (hooks)</a></th>
+<td>Store</td>
+<td>Yes</td>
+<td>Selector function</td>
+<td>Redux</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/dai-shi/reactive-react-redux">reactive-react-redux</a></th>
+<td>State-based object</td>
+<td>Yes</td>
+<td>Proxy-based tracking and selector function</td>
+<td>Redux</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/ctrlplusb/easy-peasy">easy-peasy</a></th>
+<td>Store</td>
+<td>Yes</td>
+<td>Selector function</td>
+<td>Redux, immer and so on</td>
+<td>Unknown (maybe no)</td>
+<td>Unknown (maybe no)</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/mobxjs/mobx-react-lite">mobx-react-lite</a></th>
+<td>Mutable state object</td>
+<td>No</td>
+<td>Proxy-based tracking</td>
+<td>MobX</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/avkonst/hookstate">hookstate</a></th>
+<td>No</td>
+<td>Yes</td>
+<td>Proxy-based tracking</td>
+<td>No</td>
+<td>Unknown</td>
+<td>Unknown</td>
+</tr>
+
+
+</table>
 
 ## Contribution
 
