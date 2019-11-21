@@ -26,7 +26,7 @@ so that library authors can contribute improving the comparison.
 ### Notes
 
 Render optimization means avoiding unnecessary re-renders.
-If a state object `{ a: 1, b: 2 }` and a component uses `a`,
+If a state object is `{ a: 1, b: 2 }` and a component only uses `a`,
 it won't re-render if only `b` is changed.
 
 For "tearing" and "state branching", refer
@@ -189,4 +189,6 @@ These are not necessarily problems depending on requirements.
 
 ## Contribution
 
-TODO
+If you have questions, suggestions or corrections, please file an issue.
+
+If you have a new library to add, please file a pull request. Please add a new row at the end of the table.
