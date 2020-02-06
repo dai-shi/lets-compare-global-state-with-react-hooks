@@ -68,7 +68,7 @@ These are not necessarily problems depending on requirements.
 <th><a href="https://github.com/diegohaz/constate">constate</a></th>
 <td>State-based object</td>
 <td>No</td>
-<td>No</td>
+<td>Multiple contexts</td>
 <td>No</td>
 <td>Yes</td>
 <td>Yes</td>
