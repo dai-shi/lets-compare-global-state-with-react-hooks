@@ -121,12 +121,12 @@ These are not necessarily problems depending on requirements.
 
 <tr>
 <th><a href="https://github.com/dai-shi/react-hooks-global-state">react-hooks-global-state</a></th>
-<td>State object</td>
 <td>No</td>
+<td>Yes</td>
 <td>Shallow state properties</td>
 <td>No</td>
 <td>Yes</td>
-<td>No</td>
+<td>Yes (w/ useGlobalStateProvider)</td>
 </tr>
 
 
