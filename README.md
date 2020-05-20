@@ -126,7 +126,7 @@ These are not necessarily problems depending on requirements.
 <td>Shallow state properties</td>
 <td>No</td>
 <td>Yes</td>
-<td>Yes (w/ useGlobalStateProvider)</td>
+<td>No</td>
 </tr>
 
 
@@ -182,6 +182,17 @@ These are not necessarily problems depending on requirements.
 <td>No</td>
 <td>Unknown</td>
 <td>Unknown</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/facebookexperimental/Recoil">recoil</a></th>
+<td>Probably rich state-based object</td>
+<td>Yes with atom abstraction</td>
+<td>atoms (incl. selectors)</td>
+<td>No</td>
+<td>Not yet</td>
+<td>Not yet</td>
 </tr>
 
 
