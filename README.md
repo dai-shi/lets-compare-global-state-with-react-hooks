@@ -196,6 +196,17 @@ These are not necessarily problems depending on requirements.
 </tr>
 
 
+<tr>
+<th><a href="https://github.com/RisingStack/react-easy-state">react-easy-state</a>(Note: This library does not provide Hooks API)</th>
+<td>No</td>
+<td>Yes with observer</td>
+<td>observer</td>
+<td>@nx-js/observer-util</td>
+<td>Unknown</td>
+<td>Unknown</td>
+</tr>
+
+
 </table>
 
 ## Contribution
