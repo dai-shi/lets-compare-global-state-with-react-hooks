@@ -207,6 +207,17 @@ These are not necessarily problems depending on requirements.
 </tr>
 
 
+<tr>
+<th><a href="https://github.com/oleggrishechkin/react-tagged-state">react-tagged-state</a></th>
+<td>No</td>
+<td>Yes</td>
+<td>Selector function with deps tracking</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+
+
 </table>
 
 ## Contribution
