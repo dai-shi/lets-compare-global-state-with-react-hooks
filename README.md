@@ -218,6 +218,17 @@ These are not necessarily problems depending on requirements.
 </tr>
 
 
+<tr>
+<th><a href="https://github.com/agile-ts/agile">agile-ts</a></th>
+<td>No</td>
+<td>Yes</td>
+<td>Runtime combining multiple rerender triggers</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+
+
 </table>
 
 ## Contribution
