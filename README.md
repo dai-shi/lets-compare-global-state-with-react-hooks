@@ -35,6 +35,7 @@ These are not necessarily problems depending on requirements.
 
 ### TODO
 
+- Reconsider points for concurrent rendering
 - Bundle size
 - js-framework-benchmark
 
@@ -58,7 +59,7 @@ These are not necessarily problems depending on requirements.
 <td>State-based object</td>
 <td>Yes</td>
 <td>Proxy-based tracking and selector function</td>
-<td>No</td>
+<td>use-context-selector, proxy-compare</td>
 <td>Yes</td>
 <td>Yes</td>
 </tr>
@@ -87,7 +88,7 @@ These are not necessarily problems depending on requirements.
 
 
 <tr>
-<th><a href="https://github.com/react-spring/zustand">zustand</a></th>
+<th><a href="https://github.com/pmndrs/zustand">zustand</a></th>
 <td>No</td>
 <td>Yes</td>
 <td>Selector function</td>
@@ -142,17 +143,6 @@ These are not necessarily problems depending on requirements.
 
 
 <tr>
-<th><a href="https://github.com/dai-shi/reactive-react-redux">reactive-react-redux</a></th>
-<td>State-based object</td>
-<td>Yes</td>
-<td>Proxy-based tracking and selector function</td>
-<td>Redux</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-
-
-<tr>
 <th><a href="https://github.com/ctrlplusb/easy-peasy">easy-peasy</a></th>
 <td>Store</td>
 <td>Yes</td>
@@ -191,7 +181,7 @@ These are not necessarily problems depending on requirements.
 <td>Yes with atom abstraction</td>
 <td>atoms (incl. selectors)</td>
 <td>No</td>
-<td>Not yet</td>
+<td>Unknown</td>
 <td>Not yet</td>
 </tr>
 
@@ -228,6 +218,27 @@ These are not necessarily problems depending on requirements.
 <td>No</td>
 </tr>
 
+
+<tr>
+<th><a href="https://github.com/pmndrs/jotai">jotai</a></th>
+<td>Store</td>
+<td>Yes, atom-based subscription</td>
+<td>atoms</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+
+
+<tr>
+<th><a href="https://github.com/pmndrs/valtio">valtio</a></th>
+<td>No</td>
+<td>Yes</td>
+<td>Proxy-based tracking</td>
+<td>proxy-compare</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
 
 </table>
 
