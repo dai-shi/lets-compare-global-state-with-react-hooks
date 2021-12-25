@@ -20,8 +20,8 @@ so that library authors can contribute improving the comparison.
 2. Does it use subscription for state propagation?
 3. Does it have render optimization? What is the technique?
 4. Does it have dependencies? What are they?
-5. Does it avoid tearing in concurrent mode?
-6. Does it support state branching in concurrent mode?
+5. What's the level of compatibility with concurrent rendering?
+6. Bundle size (Minified + Gzipped)
 
 ### Notes
 
@@ -33,24 +33,18 @@ For "tearing" and "state branching", refer
 <https://github.com/dai-shi/will-this-react-global-state-work-in-concurrent-mode>.
 These are not necessarily problems depending on requirements.
 
-### TODO
-
-- Reconsider points for concurrent rendering
-- Bundle size
-- js-framework-benchmark
-
 ## Comparison Table
 
 <table>
 
 <tr>
 <th></th>
-<th>Point 1</th>
-<th>Point 2</th>
-<th>Point 3</th>
-<th>Point 4</th>
-<th>Point 5</th>
-<th>Point 6</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+<th>6</th>
 </tr>
 
 
@@ -60,8 +54,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes</td>
 <td>Proxy-based tracking and selector function</td>
 <td>use-context-selector, proxy-compare</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>Level 3</td>
+<td><a href="https://bundlephobia.com/package/react-tracked@1.7.5">1.9kB</a></td>
 </tr>
 
 
@@ -71,8 +65,8 @@ These are not necessarily problems depending on requirements.
 <td>No</td>
 <td>Multiple contexts</td>
 <td>No</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>Level 3</td>
+<td><a href="https://bundlephobia.com/package/constate@3.3.0">508B<a/></td>
 </tr>
 
 
@@ -82,8 +76,8 @@ These are not necessarily problems depending on requirements.
 <td>No</td>
 <td>No</td>
 <td>No</td>
-<td>Unknown (maybe yes)</td>
-<td>Unknown (maybe yes)</td>
+<td>Unknown</td>
+<td><a href="https://bundlephobia.com/package/unstated-next@1.1.0">362B</a></td>
 </tr>
 
 
@@ -93,8 +87,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes</td>
 <td>Selector function</td>
 <td>No</td>
-<td>No</td>
-<td>No</td>
+<td>Level 2</td>
+<td><a href="https://bundlephobia.com/package/zustand@3.6.8">954B</a></td>
 </tr>
 
 
@@ -104,8 +98,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes</td>
 <td>Selector function</td>
 <td>No</td>
-<td>No</td>
-<td>No</td>
+<td>Unknown</td>
+<td><a href="https://bundlephobia.com/package/react-sweet-state@2.5.2">3.6kB</a></td>
 </tr>
 
 
@@ -115,8 +109,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes</td>
 <td>Shallow state properties</td>
 <td>No</td>
-<td>No</td>
-<td>No</td>
+<td>Unknown</td>
+<td><a href="https://bundlephobia.com/package/storeon@3.1.4">370B</a></td>
 </tr>
 
 
@@ -126,8 +120,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes</td>
 <td>Shallow state properties</td>
 <td>No</td>
-<td>Yes</td>
-<td>No</td>
+<td>Level 1</td>
+<td><a href="https://bundlephobia.com/package/react-hooks-global-state@1.0.2">1.1kB</a></td>
 </tr>
 
 
@@ -137,8 +131,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes</td>
 <td>Selector function</td>
 <td>Redux</td>
-<td>No</td>
-<td>No</td>
+<td>Level 2</td>
+<td><a href="https://bundlephobia.com/package/react-redux@7.2.6">5.4kB</a></td>
 </tr>
 
 
@@ -148,8 +142,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes</td>
 <td>Selector function</td>
 <td>Redux, immer and so on</td>
-<td>Unknown (maybe no)</td>
-<td>Unknown (maybe no)</td>
+<td>Unknown</td>
+<td><a href="https://bundlephobia.com/package/easy-peasy@5.0.4">9.6kB</a></td>
 </tr>
 
 
@@ -159,8 +153,8 @@ These are not necessarily problems depending on requirements.
 <td>No</td>
 <td>Proxy-based tracking</td>
 <td>MobX</td>
-<td>No</td>
-<td>No</td>
+<td>Unknown</td>
+<td><a href="https://bundlephobia.com/package/mobx-react-lite@3.2.2">2kB</a></td>
 </tr>
 
 
@@ -171,7 +165,7 @@ These are not necessarily problems depending on requirements.
 <td>Proxy-based tracking</td>
 <td>No</td>
 <td>Unknown</td>
-<td>Unknown</td>
+<td><a href="https://bundlephobia.com/package/@hookstate/core@3.0.13">4.5kB</a></td>
 </tr>
 
 
@@ -181,8 +175,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes with atom abstraction</td>
 <td>atoms (incl. selectors)</td>
 <td>No</td>
-<td>Unknown</td>
-<td>Not yet</td>
+<td>Level 2</td>
+<td><a href="https://bundlephobia.com/package/recoil@0.5.2">21.1kB</a></td>
 </tr>
 
 
@@ -193,7 +187,7 @@ These are not necessarily problems depending on requirements.
 <td>observer</td>
 <td>@nx-js/observer-util</td>
 <td>Unknown</td>
-<td>Unknown</td>
+<td><a href="https://bundlephobia.com/package/react-easy-state@6.1.3">2.9kB</a></td>
 </tr>
 
 
@@ -203,8 +197,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes</td>
 <td>Selector function with deps tracking</td>
 <td>No</td>
-<td>Yes</td>
-<td>No</td>
+<td>Unknown</td>
+<td><a href="https://bundlephobia.com/package/react-tagged-state@1.0.6">804B</a></td>
 </tr>
 
 
@@ -214,8 +208,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes</td>
 <td>Runtime combining multiple rerender triggers</td>
 <td>No</td>
-<td>No</td>
-<td>No</td>
+<td>Unknown</td>
+<td><a href="https://bundlephobia.com/package/@agile-ts/core@0.2.7">12.7kB<a></td>
 </tr>
 
 
@@ -225,8 +219,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes, atom-based subscription</td>
 <td>atoms</td>
 <td>No</td>
-<td>Yes</td>
-<td>No</td>
+<td>Level 1 / (Level 3)</td>
+<td><a href="https://bundlephobia.com/package/jotai@1.4.9">2.6kB</a></td>
 </tr>
 
 
@@ -236,8 +230,8 @@ These are not necessarily problems depending on requirements.
 <td>Yes</td>
 <td>Proxy-based tracking</td>
 <td>proxy-compare</td>
-<td>Yes</td>
-<td>No</td>
+<td>Level 2</td>
+<td><a href="https://bundlephobia.com/package/valtio@1.2.7">2.5kB</a></td>
 </tr>
 
 </table>
